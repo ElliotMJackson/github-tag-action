@@ -50,7 +50,7 @@ current_branch=$(git rev-parse --abbrev-ref HEAD)
 
 pre_release="$prerelease"
 IFS=',' read -ra branch <<< "$release_branches"
-echo "pre_release = $pre_release"
+echo "pre_release= $pre_release"
 
 # fetch tags
 git fetch --tags
